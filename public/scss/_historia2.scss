@@ -1,0 +1,156 @@
+.historiaDos{
+    @media screen and (min-width:769px){
+        display: none;
+    }
+    padding-top: 71.5px;
+    &Circulos{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        
+        &Element{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 50%;
+            $colors: 1 $blue, 2 $orange;
+
+            @each $index,$color in $colors {
+                &#{$index} {
+                  background-color: $color;
+                  width: 75px;
+                  height: 75px;
+                  display: flex;
+                  justify-content: center;
+                  border-radius: 100%;
+                  
+                }
+              }
+
+              &Text{
+                  font-size: 11px;
+                  font-weight: 500;
+                  line-height: 14px;
+                  color: $darkGray;
+                  text-align: center;
+                  margin-top: 9.5px;
+              }
+
+              .soporteFoto{
+                  width: 40%;
+                  height: 100%;
+              }
+
+              .ejecutarFoto{
+                width: 65%;
+                height: 100%;
+              }
+
+              .escucharFoto{
+                width: 50%;
+                height: 100%;
+              }
+        }
+
+        &Element:nth-child(1){
+            padding-top: 78px;
+        }
+
+        &Element:nth-child(2){
+            align-self: flex-start;
+        }
+    }
+
+    .satisfaccion{
+        &Container{
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            background-image: url("../img/círculo-satisfaccion-Celular.svg");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -36px;
+            &Title{
+                font-size: 14px;
+                font-weight: 700;
+                color: $orange;
+            }
+        }
+    }
+}
+
+.circulosImagenes{
+    @media screen and (max-width:1024px){
+        display: none;
+    }    
+    background-color: $blue;
+    .contenedorCirculos{
+        display: grid;
+        @media screen and (max-width:425px){            
+            grid-template-columns: repeat(4,24%);
+            grid-column-gap: 1%;        
+        }
+    
+        @media screen and (min-width:426px){            
+            grid-template-columns: repeat(12,7.333333333333334%);
+            grid-column-gap: 1%;
+        }  
+        
+        .circulosImagenesElemento{
+            text-align: center;
+            top: -90px;
+            position: relative;
+            h2{
+                margin-top: 46.5px;
+                font-size: 24px;
+                line-height: 27px;
+                font-weight: 800;
+                color: $orange;
+            }      
+            p{
+                margin-top: 28px;
+                font-size: 16px;
+                line-height: 27px;
+                font-weight: 400;
+                color: #fff;
+            }      
+        }
+
+        .circulosImagenesElemento:nth-child(1){
+            grid-column: 3 / span 2;
+            img{
+                width: 100%;
+            }
+        }
+
+        .circulosImagenesElemento:nth-child(2){
+            grid-column: 6 / span 2;
+            img{
+                width: 100%;
+            }
+        }
+          
+        .circulosImagenesElemento:nth-child(3){
+            grid-column: 9 / span 2;
+            img{
+                width: 100%;
+            }
+        }
+
+
+    }
+    .circulosButton{
+        grid-column: 6 / span 2;
+        color: #fff;
+        margin-bottom: 72px;
+        padding: 10px 0px;
+        font-size: 16px;
+        font-weight: 800;
+        grid-row: 2/3;
+        background-color: $orange;
+    }
+}

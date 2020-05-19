@@ -1,0 +1,45 @@
+extends layout
+
+block content  
+    section.headerQuienesSomos  
+        .links
+            a(href="/") Inicio /
+            a(href="/quienes-somos")  Quienes somos
+        h1.headerQuienesSomosTitle Quienes 
+            span somos
+    section.imagenPrincipal                    
+        img(src="./img/Portada-Quienes-Somos.png", alt="Foto de portada de una oficina y diferentes secciones de la misma" style="height:133px;object-fit:cover;").w-100
+    section.descripcionQuienesSomos 
+        .contenedor1
+            p.descripcionQuienesSomosParrafo1 
+                span SKOL SOLUTIONS 
+                | es una empresa joven,compuesta por un equipo de profesionales comprometidos con el diseño, integracióny ejecución de soluciones Audiovisualespara Salas de Reunión, Auditorios, entre otros. 
+                br 
+                | Entregamos soluciones “llave en mano”,para Empresas corporativas, retail,gobierno, salud, hotelería, etc.
+        .contenedor2            
+            h2.contenedor2Title Nuestra 
+                span experiencia
+            p.descripcionQuienesSomosParrafo1 Tenemos una experiencia en equipamiento audiovisual desde hace más de 15 años.Trabajamos día a día para brindar anuestros clientes nuestra experiencia ycalidad de servicio de excelencia. Nosgusta escuchar a nuestros clientes,asesorarlos, y de esa forma entregarle unapropuesta, con varias opciones, buscandosiempre lo más conveniente para sunecesidad, con énfasis en la ecuacióncosto/beneficio.
+        .polycomCard
+            p.cardParrafo 
+                span Skol Solutions
+                |  es Canal de 
+                span Polycom
+                | ,líder mundial en comunicaciones unificadas, certificado para la venta,asesoramiento e implementación deproductos y servicios de la marca para 
+                span Uruguay.  
+            .polycomContainer
+                img(src="./img/Polycom.png", alt="")    
+    section.misionCard
+        img(src="./img/Mision.png", alt="hombre dando la mano a mujer en pacto de confianza")    
+        .misionCardBody
+            h2 Misión
+            p.descripcionQuienesSomosParrafo1 Establecer vínculos a largo plazo con nuestros clientes,generando confianza,ofreciendo responsabilidad y lo último en soluciones audiovisuales y tecnológicas.
+                br 
+                | Trabajar codo a codo con losfabricantes para mantener ydifundir el prestigio de sumarca.
+    section.misionCard.mb-5
+        img(src="./img/Vision.png", alt="Bandera de Uruguay" id="uruguayBandera")
+        .misionCardBody#uruguayBody
+            h2 Visión
+            p.descripcionQuienesSomosParrafo1 Ser la empresa lider en integración audiovisual de Uruguay                                
+
+    script(src="./js/quienes-somos.js")

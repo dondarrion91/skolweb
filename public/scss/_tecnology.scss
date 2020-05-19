@@ -1,0 +1,45 @@
+.tecnology{
+    @media screen and (max-width:425px){
+        display: grid;
+        grid-template-columns: repeat(4,24%);
+        grid-column-gap: 1%;        
+    }
+
+    @media screen and (min-width:426px){
+        display: grid;
+        grid-template-columns: repeat(12,7.333333333333334%);
+        grid-column-gap: 1%;
+    }   
+    margin-top: 58.5px;
+    background-image: url("../img/fondo-tenemos-la-mejor-tech-celular.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &Title{
+        @media screen and (max-width:425px){
+            grid-column: span 4;
+        }
+
+        @media screen and (min-width:426px) and (max-width: 1024px){
+            grid-column: span 12;
+        }
+
+        @media screen and (min-width:1025px){
+            grid-column: 3 / span 5;
+            text-align: left;
+        }    
+        padding-top: 94.5px;
+        @media screen and (max-width:1024px){
+            padding-bottom: 47.5px;
+        }      
+        
+        @media screen and (min-width:1025px){
+            padding-bottom: 165.5px;
+        }      
+
+        text-align: center;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 40px;
+        color: white;
+    }
+}

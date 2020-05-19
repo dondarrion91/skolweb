@@ -1,0 +1,98 @@
+.sponsor{
+    
+    &Header{
+        @media screen and (max-width:1024px){
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 31px;
+        }
+
+        @media screen and (min-width:1025px){
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 58px;
+        }
+
+        text-align: center;
+        padding-top: 66px;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31px;
+        color: $blue;
+        span{
+            color: $orange;
+        }
+    }
+    &Container{
+        @media screen and (max-width:1024px){
+            padding-top: 58px;
+        }
+
+        @media screen and (min-width:1025px){
+            padding: 118px 0px;
+        }
+
+        display: grid;
+        
+
+        @media screen and (max-width:1024px){
+            grid-template-columns: repeat(4,24%);
+            grid-column-gap: 1%;
+        }
+
+        @media screen and (min-width:1025px){
+            grid-template-columns: repeat(12,7.333333333333334%);
+            grid-column-gap: 1%;        
+        }
+        
+        .sponsorGrid{
+            display: grid;
+            @media screen and (max-width:1024px){
+                grid-column: span 4;
+                grid-template-columns: repeat(2,49%);
+                grid-column-gap: 1%;
+                &Element{
+                    grid-column: span 1;
+                }
+            }
+    
+            @media screen and (min-width:1025px){
+                grid-column: 3 / span 8;
+                grid-template-columns: repeat(10,9%);
+                grid-column-gap: 1%;        
+                img{
+                    grid-column: span 2;
+                }
+
+                img:nth-child(6){
+                    grid-column: 2 / span 2;
+                    grid-row: 2/3;
+                }
+
+                img:nth-child(7){
+                    grid-column: 4 / span 2;
+                    grid-row: 2/3;
+                }
+
+                img:nth-child(8){
+                    grid-column: 6 / span 2;
+                    grid-row: 2/3;
+                }
+
+                img:nth-child(9){
+                    grid-column: 8 / span 2;
+                    grid-row: 2/3;
+                }
+                
+            }
+        }
+
+        justify-content: center;                
+
+        &Element{
+            justify-self: center;            
+            width: 100%;
+            padding-bottom: 32px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.carrousel{
+    @media screen and (min-width:1025px){
+        display: none;
+    }
+    background-color: $blue;
+    .imagenCarrousel{
+        
+        height: 133.5px;
+    }
+}
+
+.imagenCarrousel{
+    padding-top: 54.5px;
+}
+
+.tituloCarrousel{
+    padding-top: 27.5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.textoCarrousel{
+    padding-top: 22px;
+    padding-bottom: 135px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+}
+
+.carousel-indicators{
+    padding-bottom: 40px;
+    li{
+        margin: 0px 5px;
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        
+    }
+    .active{
+        background-color: $orange;
+    }
+    
+}

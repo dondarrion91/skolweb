@@ -1,0 +1,246 @@
+.headerQuienesSomos{
+    padding: 0px 25px;
+    display: grid;
+    @media screen and (max-width:1024px){
+        grid-template-columns: repeat(4,24%);
+        grid-column-gap: 1%;
+    }
+
+    @media screen and (min-width:1025px){
+        grid-template-columns: repeat(12,7.333333333333334%);
+        grid-column-gap: 1%;        
+    }
+    .links{        
+        @media screen and (max-width:1024px){
+            grid-column: span 3;            
+            padding-top: 30px;
+        }
+    
+        @media screen and (min-width:1025px){
+            grid-column: 2/ span 4;       
+            padding-top: 69px;
+        }        
+        a{
+            @media screen and (max-width:1024px){
+                font-size: 14px;
+            }
+        
+            @media screen and (min-width:1025px){
+                font-size: 20px;
+            }            
+            font-weight: 400;  
+            color: black;
+            text-decoration: none;          
+        }
+        a:nth-child(2){
+            color: $orange;
+        }
+    }
+    &Title{          
+        @media screen and (max-width:1024px){
+            grid-column: span 4; 
+            font-size: 34px;           
+            padding: 30px 0px;      
+        }
+    
+        @media screen and (min-width:1025px){
+            grid-column: 2/ span 6;       
+            grid-row: 2/3;
+            font-size: 60px;
+            padding-top: 33px;
+            padding-bottom: 59px;
+        }  
+                
+        font-weight: 800;
+        color: $blue;
+        span{
+            color: $orange;
+        }
+    }
+}
+
+.imagenPrincipal{
+    @media screen and (min-width:1025px){
+        display: grid;
+        grid-template-columns: repeat(12,8.333333333333334%);   
+        height: 263px;       
+        img{
+            grid-column: 2/ span 10;
+            height: 100% !important;
+        }      
+    }
+}
+
+.descripcionQuienesSomos{
+    padding: 0px 25px;
+    display: grid;
+    @media screen and (max-width:1024px){
+        grid-template-columns: repeat(4,24%);
+        grid-column-gap: 1%;
+    }
+
+    @media screen and (min-width:1025px){
+        margin-top: 95px;
+        grid-template-columns: repeat(12,7.333333333333334%);
+        grid-column-gap: 1%;        
+    }
+    .contenedor1 {                
+        @media screen and (max-width:1024px){
+            grid-column: span 4;  
+            padding-top: 46px;
+        }
+    
+        @media screen and (min-width:1025px){
+            grid-column: 2 / span 3; 
+            display: flex;  
+            align-items: center;   
+        }      
+    }
+
+    .contenedor2{          
+        @media screen and (max-width:1024px){
+            grid-column: span 4; 
+            padding-top: 64px;       
+        }
+    
+        @media screen and (min-width:1025px){
+            grid-column: 5 / span 4;   
+            display: flex;  
+            flex-direction: column;
+            justify-content: center;
+        }      
+        &Title{
+            padding-bottom: 30px;
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 34px;
+            color:$blue;
+            span{
+                color:$orange;
+            }
+        }        
+    }
+}
+
+.descripcionQuienesSomosParrafo1{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: $blue;
+    span{
+        font-weight: 800;
+    }
+}
+
+.polycomCard{    
+    @media screen and (max-width:1024px){
+        grid-column: span 4;   
+        margin-top: 54.5px;         
+    }
+
+    @media screen and (min-width:1025px){
+        grid-column: 9 / span 3;      
+    }  
+    background-color: $orange;        
+    display: grid;
+    border-radius: 10px;
+    @media screen and (max-width:1024px){
+        grid-template-columns: repeat(4,24%);
+        grid-column-gap: 1%;
+    }
+
+    @media screen and (min-width:1025px){
+        grid-template-columns: repeat(12,7.333333333333334%);
+        grid-column-gap: 1%;        
+    }   
+    .cardParrafo{
+        @media screen and (max-width:1024px){
+            grid-column: span 4;   
+                    
+        }
+    
+        @media screen and (min-width:1025px){
+            grid-column:span 12;      
+        }          
+        padding: 29px;
+        font-size: 14px;
+        font-weight: 20px;
+        line-height: 20px;
+        color: #fff;
+        span{
+            font-weight: 800;
+        }
+    }
+    .polycomContainer{
+        @media screen and (max-width:1024px){
+            grid-column: span 4;   
+                    
+        }
+    
+        @media screen and (min-width:1025px){
+            grid-column:span 12;      
+        }  
+        display: flex;
+        justify-content: center;
+        padding-bottom: 29px;
+    }
+}
+
+.misionCard{    
+    margin: 0px 25px;
+    margin-top: 81px;
+    display: grid;
+    @media screen and (max-width:1024px){
+        grid-template-columns: repeat(4,24%);
+        grid-column-gap: 1%;
+    }
+
+    @media screen and (min-width:1025px){
+        grid-template-columns: repeat(12,8.333333333333334%);
+        
+    }   
+    img{
+        grid-column: span 4;
+        width: 100%;
+    }
+    &Body{
+        background-color: #fff;
+        @media screen and (max-width:1024px){
+            grid-column: span 4;
+        }
+    
+        @media screen and (min-width:1025px){
+            grid-column: 3 / span 4;
+            grid-row: 1/2;
+        }  
+        padding: 44px;
+        h2{
+            font-size: 28px;
+            font-weight: 800;
+            color: $blue;
+            padding-bottom: 24px;
+        }
+    }
+}
+
+#uruguayBandera{
+    @media screen and (max-width:1024px){
+        grid-column: span 4;
+    }
+
+    @media screen and (min-width:1025px){
+        grid-column: 3 / span 4;
+        grid-row: 1/2;
+    }  
+}
+
+#uruguayBody{
+    @media screen and (max-width:1024px){
+        grid-column: span 4;
+    }
+
+    @media screen and (min-width:1025px){
+        grid-column: 7 / span 4;
+        grid-row: 1/2;
+    }  
+}

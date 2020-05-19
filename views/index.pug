@@ -1,0 +1,205 @@
+extends layout
+
+block content    
+    section.info
+      img(src="../img/Header.jpg", alt="Fondo con foto" class="fondoFoto")
+      .infoContainer
+        h1.infoContainerTitle
+          | La nueva era de 
+          br
+          span la Integración visual
+        p.infoContainerDescription Cuente con nuestra experiencia
+      .navBarContainer
+        img.navBarContainerImage(src="../img/Header-celular.png", alt="Foto Fondo")
+        .navBarContainerMain
+          ul.navBarContainerMainList
+            li.navBarContainerMainListItem.DeskNavbarTitle
+              h2.solucionesTitle Soluciones
+            li.navBarContainerMainListItem
+              img(src='./img/Salas-multimedia-celular.svg', alt='salas multimedias')
+              p
+                | Salas 
+                br
+                | Multimedia
+            li.navBarContainerMainListItem
+              img(src='./img/Video-conferencia-celular.svg', alt='Video Conferencias')
+              p
+                | Video 
+                br
+                | conferencia
+            li.navBarContainerMainListItem
+              img(src='./img/Automatizacion-celular.svg', alt='Automatizacion')
+              p Automatización
+            li.navBarContainerMainListItem
+              img(src='./img/Video-wall-display-celular.svg', alt='Video-wall display')
+              p
+                | Video-wall 
+                br
+                | display
+            li.navBarContainerMainListItem
+              img(src='./img/Sincronización-de-ambiente-celular.svg', alt='Sincronización de ambiente')
+              p
+                | Sincronización 
+                br
+                |  ambiente
+            li.navBarContainerMainListItem
+              img(src='./img/Mobiliario-celular.svg', alt='Mobiliario')
+              p Mobiliario
+            li.navBarContainerMainListItem
+              img(src='./img/Proyectores-celular.svg', alt='Proyectores')
+              p Proyectores
+            li.navBarContainerMainListItem.DeskNavbarTitle.DeskNavbarButton
+              h4.solucionesTitle Conozca nuestros
+              .infoButton
+                button.buttonNavbar.btn Planes y soporte
+      .infoButton
+        button.infoButtonElement.btn Planes y soporte
+    // HISTORIA
+    section.historia
+      img.historiaImagen(src='./img/Compromiso-conocimiento-dedicacion.png', alt='Compromiso y dedicación')
+      .historiaDescription
+        h4.historiaDescriptionTitle
+          | Compromiso 
+          br
+          span conocimiento
+          br
+          |  y dedicación
+        p.historiaDescriptionText
+          | Para asegurar el éxito
+          | en cada desafío nos
+          | comprometemos a
+          | escuchar y diseñar,
+          | integrar y ejecutar, y
+          | brindar soporte
+          | especializado de la
+          | mano de nuestro
+          | excelente grupo de
+          | profesionales
+        section.historiaDos#innerHistoria2
+            .historiaDosCirculos
+              .historiaDosCirculosElement.col-3.pt-0
+                .historiaDosCirculosElement1
+                  img.escucharFoto(src='./img/Escuchar-y-diseñar-celular.svg', alt='Escuchar y diseñar')
+                p.historiaDosCirculosElementText Escuchar y diseñar
+              .historiaDosCirculosElement.col-3
+                .historiaDosCirculosElement2
+                  img.ejecutarFoto(src='./img/Integrar-y-ejecutar-celular.svg', alt='Escuchar y diseñar')
+                p.historiaDosCirculosElementText Integrar y ejecutar
+              .historiaDosCirculosElement.col-3
+                .historiaDosCirculosElement1
+                  img.soporteFoto(src='./img/Brindar-_soporte-celular.svg', alt='Escuchar y diseñar')
+                p.historiaDosCirculosElementText Brindar soporte
+            .satisfaccion
+              .satisfaccionContainer(style="top: 0;")
+                h4.satisfaccionContainerTitle ¡Satisfacción! 
+    section.historiaDos
+      .historiaDosCirculos
+        .historiaDosCirculosElement.col-3
+          .historiaDosCirculosElement1
+            img.escucharFoto(src='./img/Escuchar-y-diseñar-celular.svg', alt='Escuchar y diseñar')
+          p.historiaDosCirculosElementText Escuchar y diseñar
+        .historiaDosCirculosElement.col-3
+          .historiaDosCirculosElement2
+            img.ejecutarFoto(src='./img/Integrar-y-ejecutar-celular.svg', alt='Escuchar y diseñar')
+          p.historiaDosCirculosElementText Integrar y ejecutar
+        .historiaDosCirculosElement.col-3
+          .historiaDosCirculosElement1
+            img.soporteFoto(src='./img/Brindar-_soporte-celular.svg', alt='Escuchar y diseñar')
+          p.historiaDosCirculosElementText Brindar soporte
+      .satisfaccion
+        .satisfaccionContainer
+          h4.satisfaccionContainerTitle ¡Satisfacción!
+    section.tecnology
+      h4.tecnologyTitle
+        | Tenemos la mejor 
+        br
+        |             tecnología del 
+        br
+        |             mercado actual 
+        br
+    section.circulosImagenes
+      div.contenedorCirculos
+        .circulosImagenesElemento.d-flex.flex-column.align-items-center
+          img(src="./img/Tecnología.png", alt="tecnologia")
+          h2 Nuestra tecnología
+          p Contamos con personal propio y una amplia red de colaboradores externos, todos ellos expertos profesionales equipados con tecnología de última generación.
+        .circulosImagenesElemento.d-flex.flex-column.align-items-center
+          img(src="./img/Equipo.png", alt="equipo de trabajo")
+          h2 Equipo de trabajo
+          p Contamos con personal propio y una amplia red de colaboradores externos, todos ellos expertos profesionales equipados con tecnología de última generación.
+        .circulosImagenesElemento.d-flex.flex-column.align-items-center
+          img(src="./img/Servicio.png", alt="servicios")
+          h2 Soporte técnico
+          p Contamos con personal propio y una amplia red de colaboradores externos, todos ellos expertos profesionales equipados con tecnología de última generación.        
+        button.circulosButton.btn CONOCELOS
+    section.carrousel
+      #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+          li(data-target='#carouselExampleIndicators', data-slide-to='1')
+          li(data-target='#carouselExampleIndicators', data-slide-to='2')
+        .carousel-inner
+          .carousel-item.active
+            .d-flex.flex-column.align-items-center
+              img.d-block.imagenCarrousel(src='./img/Equipo-celular.png', alt='First slide')
+              h4.tituloCarrousel Equipo de trabajo
+              p.text-center.textoCarrousel
+                | Contamos con personal propio y una 
+                br
+                |                     amplia red de colaboradores 
+                br
+                |                     externos, todos ellos expertos 
+                br
+                |                     profesionales equipados con 
+                br
+                |                     tecnología de última generación
+          .carousel-item
+            .d-flex.flex-column.align-items-center
+              img.d-block.imagenCarrousel(src='./img/Servicio-celular.png', alt='Second slide')
+              h4.tituloCarrousel Equipo de trabajo
+              p.text-center.textoCarrousel
+                | Contamos con personal propio y una 
+                br
+                |                     amplia red de colaboradores 
+                br
+                |                     externos, todos ellos expertos 
+                br
+                |                     profesionales equipados con 
+                br
+                |                     tecnología de última generación
+          .carousel-item
+            .d-flex.flex-column.align-items-center
+              img.d-block.imagenCarrousel(src='./img/Tecnología-celular.png', alt='Third slide')
+              h4.tituloCarrousel Equipo de trabajo
+              p.text-center.textoCarrousel
+                | Contamos con personal propio y una 
+                br
+                |                     amplia red de colaboradores 
+                br
+                |                     externos, todos ellos expertos 
+                br
+                |                     profesionales equipados con 
+                br
+                |                     tecnología de última generación
+        a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+    section.sponsor
+      h4.sponsorHeader
+        | Empresas que confían en 
+        br
+        span nuestras soluciones
+      .sponsorContainer
+        .sponsorGrid
+          img.sponsorContainerElement(src='./img/logos empresas/logo-1.png', alt='EPSON')
+          img.sponsorContainerElement(src='./img/logos empresas/logo-2.png', alt='SAMSUNG"')
+          img.sponsorContainerElement(src='./img/logos empresas/logo-3.png', alt='NEC')
+          img.sponsorContainerElement(src='./img/logos empresas/logo-4.png', alt='POLYCOM')
+          img.sponsorContainerElement(src='./img/logos empresas/logo-5.png', alt='CRESTRON')
+          img.sponsorContainerElement(src='./img/logos empresas/logo-6.png', alt='KRAMER ELECTRONICS')
+          img.sponsorContainerElement(src='./img/logos empresas/logo-7.png', alt='SHURE')
+          img.sponsorContainerElement(src='./img/logos empresas/logo-8.png', alt='EGI')
+          img.sponsorContainerElement(src='./img/logos empresas/logo-9.png', alt='BOSE')
