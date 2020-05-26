@@ -12,5 +12,9 @@ module.exports = function(){
         mainController.quienesSomos
     );  
 
+    router.get('/servicios',
+        mainController.servicios
+    );  
+
     return router;
 }

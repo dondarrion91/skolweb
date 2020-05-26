@@ -9,3 +9,9 @@ exports.quienesSomos = (req,res) => {
         nombrePagina: "Skol solutions - quienes somos"
     });
 }
+
+exports.servicios = (req,res) => {
+    res.render("servicios",{
+        nombrePagina: "Skol solutions - servicios"
+    });
+}

@@ -1,0 +1,284 @@
+.serviciosCard{
+    grid-gap: 0;
+    .serviciosCardImage{
+        @media screen and (max-width:1024px){            
+            grid-row: 3/4;
+        }
+
+        @media screen and (min-width:1025px) and (max-width:1440px){
+            grid-column: span 5;
+            grid-row: 2/3;
+            height: 328px;
+        }
+
+        @media screen and (min-width:1441px){
+            grid-column: span 5;
+            grid-row: 2/3;
+            height: 227px;
+        }
+    }
+
+    .serviciosCardBody{
+        display: flex;
+        align-items: center;
+        @media screen and (min-width:1025px) and (max-width:1440px){
+            grid-column: 2 / span 5;
+            grid-row: 2/3;
+            height: 328px;
+        }
+
+        @media screen and (min-width:1441px){
+            grid-column: 2 / span 5;
+            grid-row: 2/3;
+            height: 227px;
+        }
+    }
+
+    margin-top: 0;
+    .spanOrange{
+        color: $orange;
+    }
+    &TitleServicios{
+        padding: 34px 0px;        
+        font-size: 34px;
+        font-weight: 800;
+        line-height: 40px;   
+
+        @media screen and (max-width:1024px){            
+            grid-column: span 4;
+        }
+
+        @media screen and (min-width:1025px){
+            grid-column: 2 / span 8;
+        }
+
+        br{
+            @media screen and (min-width:426px){
+                display: none;
+            }            
+        }
+        .spanBlue{
+            color: $blue;
+        }
+
+        
+    }
+
+    .serviciosText{
+        grid-row: 2/3;
+    
+        @media screen and (max-width:1024px){
+            grid-column: span 4;  
+        }        
+    
+        @media screen and (min-width:1025px){
+            grid-column: 8 / span 4;   
+        }   
+    }
+}
+
+.experienciaTitle{
+    grid-row: 1/2;
+    
+    @media screen and (max-width:1024px){
+        grid-column: span 4;  
+    }        
+
+    @media screen and (min-width:1025px){
+        grid-column: 8 / span 4;  
+    }   
+}
+
+#tecnicosPicture{   
+    @media screen and (max-width:1024px){
+        grid-row: 4/5;
+        grid-column: 4 / span 1;
+    }        
+
+    @media screen and (min-width:1025px){                
+        grid-column: 2 / span 2;          
+    }   
+}
+
+#equiposPicture{    
+    @media screen and (max-width:1024px){
+        grid-row: 3/4;
+        grid-column: span 3;
+    }        
+
+    @media screen and (min-width:1025px){
+        height: 100%;
+        grid-column: 4 / span 3;  
+        
+    }   
+}
+
+.audiovisualContent{
+    @media screen and (min-width:1025px){
+        margin-top: 129px;                      
+    }      
+}
+
+//Tipografia naranja
+.spanOrange{
+    color: $orange;
+}
+
+//Tipografia azul
+.spanBlue{
+    color: $blue;
+}
+
+// padding de 81px
+.tituloLarge{
+    padding-top: 81px;
+}
+
+// Quita el background
+.noBack{
+    background: none;
+}
+
+// Sistema de grillas
+.gridSystem{
+    display: grid;
+    @media screen and (max-width:1024px){
+        grid-template-columns: repeat(4,24%);
+        grid-column-gap: 1%;
+    }
+
+    @media screen and (min-width:1025px){
+        grid-template-columns: repeat(12,7.333333333333334%);
+        grid-column-gap: 1%;        
+    }
+}
+
+// Mantenimiento preventivo contenedor
+.warningContainer{
+    padding-top: 30px;
+    grid-column: 2 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .warningIcon{
+        width: 30px;
+        height: 30px;
+    }
+    .warningTitle{
+        padding: 10px 0px;
+        line-height: 21px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 18px;
+        color: $orange;
+    }
+    
+}
+
+.helpDesk{
+    margin-top: auto;
+    padding: 0;
+    height: 50%;      
+}
+
+
+
+.warningCardBody{
+    grid-column: span 4;
+    padding-bottom: 80px;
+    .warningTitle{
+        color: $darkGray;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+}
+
+.carrouselGrid{
+    grid-column: span 4;
+    @media screen and (min-width:1024px){
+        display: none;
+    }
+}
+
+.catalogoContent{
+    @media screen and (min-width:1024px){
+        display: none;
+    }
+}
+
+#carrouselDesktop{
+    @media screen and (max-width:1023px){
+        display: none;
+    }
+
+    @media screen and (min-width:1024px){
+        div{
+            margin: 10px 0px;
+        }
+        grid-column:  2 / span 10;
+        .innerCatalogoContent{
+            grid-column: span 6;
+        }
+        
+    }    
+}
+
+.cardList{    
+    text-align: center;
+    padding-top: 22px;
+    &Item{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    @for $i from 1 through 4 {
+        .cardListItem:nth-child(even) {
+          color: $orange;
+        }
+        .cardListItem:nth-child(odd) {
+            color: $blue;
+          }
+      }
+      
+}
+
+.personalContent{
+
+    @media screen and (min-width:1025px){
+        .personalImage{
+            grid-column: 8 / span 4;
+            grid-row: span 2;
+        }
+    
+        .personalTitle{
+            grid-column: 3 / span 4;
+            text-align: right;
+        }
+    
+        .personalText{
+            grid-column: 3 / span 4;
+            text-align: right;
+        }
+    }
+    
+}
+
+.postVentaCard{
+    .cardElement{
+        @media screen and (max-width:1024px){
+            grid-column: span 4;
+        }
+
+        @media screen and (min-width:1025px){
+            grid-column: 2 / span 10;
+            flex-direction: row-reverse;
+            
+            img{
+                width: 25%;                
+            }
+        }
+    }    
+    
+}

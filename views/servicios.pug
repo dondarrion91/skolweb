@@ -1,0 +1,177 @@
+extends layout
+
+block content  
+    section.headerQuienesSomos  
+        .links
+            a(href="/") Inicio /
+            a(href="/quienes-somos")  Quienes somos
+        h1.headerQuienesSomosTitle Servicios  
+    section.imagenPrincipal                    
+        img(src="./img/Portada-servicios.png", alt="Foto de portada de una oficina y diferentes secciones de la misma" style="height:133px;object-fit:cover;").w-100           
+    section.misionCard.serviciosCard
+        h2.serviciosCardTitleServicios.spanBlue.pt-5 
+            span.spanOrange Servicios de
+            br 
+            |  Skol solutions
+        img.serviciosCardImage(src="./img/tecnologia.png", alt="hombre dando la mano a mujer en pacto de confianza")    
+        .misionCardBody.serviciosCardBody            
+            p.descripcionQuienesSomosParrafo1 
+                span SKOL SOLUTIONS 
+                | es una empresa de Proyectos audiovisuales,Comunicaciones, Multimedia y servicios, que ofrece soluciones integrales de vanguardia en la integración de sistemas audiovisuales, en todos los ámbitos de aplicaciones: hoteles, hospitales, oficinas,laboratorios, centros lúdicos culturales o educativos, museos,industria, etc.
+    section.misionCard.serviciosCard.audiovisualContent
+        h2.serviciosCardTitleServicios.spanOrange.tituloLarge.experienciaTitle
+            span.spanBlue Tenemos una larga experiencia de más de 
+            br 
+            |  16 años en el sector audiovisual
+        img(src="./img/EquipoServicios.png" id="equiposPicture", alt="Imagen de un equipo de trabajo de la empresa" )
+        img(src="./img/Tecnicos.png" id="tecnicosPicture", alt="Imagen de tecnico trabajando en servidores" )        
+        .misionCardBody.p-0.noBack.serviciosText        
+            p.descripcionQuienesSomosParrafo1
+                | Somos una empresa puntera en la elaboración de proyectos, estudios,instalaciones, eventos, etc., trabajando para empresas e instituciones de primer orden.
+    section.misionCard.serviciosCard.personalContent
+        h2.serviciosCardTitleServicios.spanOrange.tituloLarge.personalTitle
+            span.spanBlue Contamos con personal propio y una amplia 
+            |red de colaboradores externos
+        img.personalImage(src="./img/Personal.png", alt="Mujer revisando dispositivo tablet" class="pt-5")        
+        .misionCardBody.p-0.noBack.serviciosText.personalText            
+            p.descripcionQuienesSomosParrafo1 
+                | Todos ellos expertos profesionales equipados con tecnología de última generación, garantizamos cobertura nacional, las mejores soluciones y la máxima calidad en cada proyecto.
+    section.misionCard.mt-6.postVentaCard
+        .card.border-0.cardElement
+            img.card-img-top(src='./img/post-venta.png' , alt='Imagen de hombre hablando por telefono con fondo naranja')
+            .card-body.p-5(style="border-radius:0px 0px 10px 10px")
+              p.card-text.descripcionQuienesSomosParrafo1(style="color:#848484")
+                | Nuestro servicio 
+                span(style="font-weight:800") post-venta garantiza 
+                | asesoramiento,supervisión y control de equipos y sistemas, soporte online para la solución inmediata de dudas o problemas de operativa y funcionamiento, así como mantenimiento preventivo y correctivo in-situ en todas las instalaciones.
+    section.misionCard.serviciosCard.catalogoContent
+        h2.serviciosCardTitleServicios.spanOrange.tituloLarge.experienciaTitle.pt-5.pb-3
+            span.spanBlue Servicios
+        .misionCardBody.p-0.noBack.serviciosText            
+            p.descripcionQuienesSomosParrafo1 
+                | Disponemos de un amplio 
+                span(style="font-weight:800") catálogo de planes de soporte y de mantenimiento 
+                | que se adaptan a las necesidades de cada cliente y así cumplir con nuestro principal objetivo: satisfacer los requerimientos denuestro cliente, aportando el máximo valora sus servicios y/o instalaciones con una justa relación calidad-coste.
+    section.misionCard.mt-5.mb-5
+        #carrouselDesktop.gridSystem
+                .serviciosCard.innerCatalogoContent
+                    h2.serviciosCardTitleServicios.spanOrange.tituloLarge.experienciaTitle.pt-5.pb-3
+                        span.spanBlue Servicios
+                    .misionCardBody.p-0.noBack.serviciosText            
+                        p.descripcionQuienesSomosParrafo1 
+                            | Disponemos de un amplio 
+                            span(style="font-weight:800") catálogo de planes de soporte y de mantenimiento 
+                            | que se adaptan a las necesidades de cada cliente y así cumplir con nuestro principal objetivo: satisfacer los requerimientos denuestro cliente, aportando el máximo valora sus servicios y/o instalaciones con una justa relación calidad-coste.
+                .card.border-0(style='grid-column:span 3;height:404px;') 
+                    .warningContainer
+                        img.warningIcon(src="./img/Mantenimiento-preventivo-escritotio.svg", alt="Simbolo de precaucion")          
+                        h2.warningTitle Mantenimiento preventivo
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Supervisión remota, tareas preventivas y visitas programadas de mantenimiento, con el objetivo de garantizar el correcto funcionamiento de equipos y sistemas, minimizando la aparición de incidencias.
+              
+                .card.border-0(style='grid-column:span 3;height:404px;') 
+                    .warningContainer
+                        img.warningIcon(src="./img/Mantenimiento-correctivo-escritorio.svg", alt="Simbolo de herramienta")          
+                        h2.warningTitle Mantenimiento correctivo
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Tiene como finalidad la reparación no sujeta a programa.
+                      ul.cardList
+                        li.cardListItem • Asistencia in situ a petición del cliente
+                        li.cardListItem • Soporte remoto
+                        li.cardListItem • Tiempo de respuesta preferencial
+                        li.cardListItem • Plan de horas
+              
+                .card.border-0(style='grid-column: 4 / span 3;height:404px;') 
+                    .warningContainer.helpDesk
+                        img.warningIcon(src="./img/Help-desk-escritorio.svg", alt="Simbolo de monitor de computadora")          
+                        h2.warningTitle Help desk
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Soporte online para la solución inmediata de dudas o problemas de operativa y funcionamiento.
+              
+                .card.border-0(style='grid-column:span 3;height:404px;') 
+                    .warningContainer
+                        img.warningIcon(src="./img/Gestion-remota-escritorio.svg", alt="Simbolo de wifi")          
+                        h2.warningTitle Gestión remota
+                    .card-body.warningCardBody.p-0(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Soporte online para el apoyo en la operativa de sistemas, así como para el mantenimiento y monitorización remota de los equipos propiedad del cliente.
+                      ul.cardList
+                        li.cardListItem • Supervisión de equipos
+                        li.cardListItem • Equipos Audiovisuales
+                        li.cardListItem • Equipos VideoConferencia
+                        li.cardListItem • Cartelería
+                        li.cardListItem • Actualización de software
+                        li.cardListItem • Actuaciones correctivas en remoto
+              
+                .card.border-0(style='grid-column:span 3;height:404px;') 
+                    .warningContainer
+                        img.warningIcon(src="./img/Asesoramiento-escritorio.svg", alt="Simbolo de mensajes de texto")          
+                        h2.warningTitle Asesoramiento
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Asesoramiento a nuestros clientes en la actualización de equipos y sistemas. Incluye asesoramiento técnico especializado e información puntual sobre las evoluciones tecnológicas de los equipos y sistemas instalados, así como el seguimiento para renovación de las garantías del fabricante.
+        #carouselExampleIndicators.carousel.slide.carrouselGrid(data-ride='carousel')
+            ol.carousel-indicators.p-0(style="bottom: -40px;")
+              li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+              li(data-target='#carouselExampleIndicators', data-slide-to='1')
+              li(data-target='#carouselExampleIndicators', data-slide-to='2')
+              li(data-target='#carouselExampleIndicators', data-slide-to='3')
+              li(data-target='#carouselExampleIndicators', data-slide-to='4')              
+            .carousel-inner
+              .carousel-item.active
+                .card.border-0.gridSystem(style='grid-column:span 4;height:404px;') 
+                    .warningContainer
+                        img.warningIcon(src="./img/Mantenimiento-preventivo-escritotio.svg", alt="Simbolo de precaucion")          
+                        h2.warningTitle Mantenimiento preventivo
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Supervisión remota, tareas preventivas y visitas programadas de mantenimiento, con el objetivo de garantizar el correcto funcionamiento de equipos y sistemas, minimizando la aparición de incidencias.
+              .carousel-item
+                .card.border-0.gridSystem(style='grid-column:span 4;height:404px;') 
+                    .warningContainer
+                        img.warningIcon(src="./img/Mantenimiento-correctivo-escritorio.svg", alt="Simbolo de herramienta")          
+                        h2.warningTitle Mantenimiento correctivo
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Tiene como finalidad la reparación no sujeta a programa.
+                      ul.cardList
+                        li.cardListItem • Asistencia in situ a petición del cliente
+                        li.cardListItem • Soporte remoto
+                        li.cardListItem • Tiempo de respuesta preferencial
+                        li.cardListItem • Plan de horas
+              .carousel-item
+                .card.border-0.gridSystem(style='grid-column:span 4;height:404px;') 
+                    .warningContainer.helpDesk
+                        img.warningIcon(src="./img/Help-desk-escritorio.svg", alt="Simbolo de monitor de computadora")          
+                        h2.warningTitle Help desk
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Soporte online para la solución inmediata de dudas o problemas de operativa y funcionamiento.
+              .carousel-item
+                .card.border-0.gridSystem(style='grid-column:span 4;height:404px;') 
+                    .warningContainer
+                        img.warningIcon(src="./img/Gestion-remota-escritorio.svg", alt="Simbolo de wifi")          
+                        h2.warningTitle Gestión remota
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Soporte online para el apoyo en la operativa de sistemas, así como para el mantenimiento y monitorización remota de los equipos propiedad del cliente.
+                      ul.cardList
+                        li.cardListItem • Supervisión de equipos
+                        li.cardListItem • Equipos Audiovisuales
+                        li.cardListItem • Equipos VideoConferencia
+                        li.cardListItem • Cartelería
+                        li.cardListItem • Actualización de software
+                        li.cardListItem • Actuaciones correctivas en remoto
+              .carousel-item
+                .card.border-0.gridSystem(style='grid-column:span 4;height:404px;') 
+                    .warningContainer
+                        img.warningIcon(src="./img/Asesoramiento-escritorio.svg", alt="Simbolo de mensajes de texto")          
+                        h2.warningTitle Asesoramiento
+                    .card-body.warningCardBody(style="border-radius:0px 0px 10px 10px")
+                      p.card-text.warningTitle.text-center
+                        | Asesoramiento a nuestros clientes en la actualización de equipos y sistemas. Incluye asesoramiento técnico especializado e información puntual sobre las evoluciones tecnológicas de los equipos y sistemas instalados, así como el seguimiento para renovación de las garantías del fabricante.            
+
+    script(src="./js/quienes-somos.js")                        
